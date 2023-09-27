@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C/C++: build active file",
+			"type": "shell",
+			"windows": {
+				"command": "C:/ProgramData/mingw64/mingw64/bin/g++.exe",
+				"args": [
+					"-fdiagnostics-color=always",
+					"-g",
+					"-I${workspaceFolder}\\userlib",
+					"${workspaceFolder}\\userlib\\*.c",
+					"${file}",
+					"-o",
+					"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				],
+				"options": {
+					"cwd": "C:/ProgramData/mingw64/mingw64/bin"
+				}
+			},
+			"osx": {
+				"command": "/usr/bin/clang++",
+				"args": [
+					"-fcolor-diagnostics",
+					"-fansi-escape-codes",
+					"-g",
+					"-I${workspaceFolder}/userlib",
+					"${workspaceFolder}/userlib/*.c",
+					"${file}",
+					"-o",
+					"${fileDirname}/${fileBasenameNoExtension}.out"
+				],
+				"options": {
+					"cwd": "${fileDirname}"
+				}
+			},
+			"linux": {
+				"command": "/usr/bin/g++",
+				"args": [
+					"-fdiagnostics-color=always",
+					"-g",
+					"-I${workspaceFolder}/userlib",
+					"${workspaceFolder}/userlib/*.c",
+					"${file}",
+					"-o",
+					"${fileDirname}/${fileBasenameNoExtension}.out"
+				],
+				"options": {
+					"cwd": "${fileDirname}"
+				}
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Cross-platform C/C++ build task"
+		}
+	]
+}
