@@ -1,6 +1,6 @@
 # Visual Studio Code C/C++ Development Environment Setup
 
-This example provides a guide for setting up a C/C++ development environment using Visual Studio Code, which can be executed on Windows, macOS, and Linux. For detailed instructions, please refer to [this article](#).
+This example provides a guide for setting up a C/C++ development environment using Visual Studio Code, which can be executed on Windows, macOS, and Linux. For detailed instructions, please refer to [this article](https://blog.dinosauria.xyz/blog/write-cpp-with-vscode-2024/).
 
 ## Environment Setup
 
