@@ -19,7 +19,7 @@ choco install -y mingw
 
 ### macOS
 
-Use `brew` to install `Visual Studio Code` and install `clang` & `lldb` via `xcode-select`.
+Use [brew](https://brew.sh/) to install `Visual Studio Code` and install `clang` & `lldb` via `xcode-select`.
 
 ```shell
 brew install --cask visual-studio-code
